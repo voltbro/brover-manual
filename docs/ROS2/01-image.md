@@ -13,7 +13,7 @@ description: Образ Raspberry Pi 5
 * ROS 2 Jazzy;
 * все необходимые системные библиотеки и утилиты для работы робота.
 
-Актуальную версию образа можно скачать по ссылке: *(здесь будет ссылка)*.
+Актуальную версию образа можно скачать по ссылке: https://disk.yandex.ru/d/XdNcAYlAGHu0yg
 
 ---
 
@@ -155,52 +155,3 @@ broverNN
 ```
 
 и заменить имя `brover01` на `broverNN`.
-
-
-
-<!-- Компьютеры Raspberry, идущие в комплекте с роботами, поставляются с предустановленными ОС Ubuntu Server 24.04.3 LTS, ROS Jazzy и всеми необходимыми системными пакетами. Последнюю версию образа вы можете скачать по ссылке *здесь будет ссылка*.
-
-В файле `/etс/os-realease` указана версия образа: `IMAGE_VERSION="broverOS_v2.x.x"` 
-
-На образе установлены:
-- Системные пакеты:
-  -   -- libhidapi-de
-  -   -- libboost-all-dev
-- ROS пакеты:
-  -   -- ros-jazzy-tf-transformations
-  -   -- ros-jazzy-usb-cam
-  -   -- ros-jazzy-rosbridge-server
-  -   -- ros-jazzy-joy
-  Домен окружения ROS: ROS_DOMAIN_ID = 10.
-- Утилиты для работы с протоколом [CAN](https://docs.vbcores.ru/docs/SoftwareSetup/rpi-setting), [Cyphal](https://docs.vbcores.ru/docs/Cyphal/cyphal-can):
-  -   -- can-utils
-  -   [-- yakut](https://docs.vbcores.ru/docs/Cyphal/yakut)
-
-Драйверы моторов обмениваются данными с Raspberry PI по **cyphal can**. Параметры, указанные для шины CAN, записаны в файл `/opt/voltbro/config.ini`, параметры, необходимые для работы с cyphal `~/.yakut_params`. Настоятельно рекомендуем для стабильной работы Brover E5 их не менять. По умолчанию стоят следующие конфигурации:
-- Type = fd
-- Bitrate = 1000000
-- Dbitrate = 8000000
-- UAVCAN__CAN__IFACE=socketcan:can0
-- UAVCAN__NODE__ID=101
-- UAVCAN__CAN__MTU=64
-
-#### Сервис в автозагрузке
-- **ros_nodes.service** - запускает все ros программы и ros сервисы
-
-•	Остановить работу сервиса:
-```
-sudo systemctl stop ros_nodes.service
-```
-•	Запустить сервис обратно: 
-```
-sudo systemctl start ros_nodes.service
-```
-•	Данный сервис запускает скрипт `/usr/local/bin/start_ros_nodes.sh.`, который стартует все ros программы и ros сервисы 
-
-## Загрузка образа ОС на SD-карту без настроек
-
-Проще всего загрузить образ на SD карту с помощью программы [balenaEtcher](https://www.balena.io/etcher/) или [Raspberry Pi Imager ](https://www.raspberrypi.com/software/) 
-
-По умолчанию, имя робота установлено brover01.
-
-Рекомендуется сразу изменить его на имя согласно номеру на sd-карте робота broverNN. Для этого необходимо отредактировать файлы /etc/hosts и /etc/hostname, расположенные на роботе, и переименовать brover01->broverNN. -->
