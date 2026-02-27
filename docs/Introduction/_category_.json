@@ -1,0 +1,9 @@
+{
+  "label": "Введение",
+  "position": 2,
+  "link": {
+    "slug": "introduction",
+    "type": "generated-index",
+    "description": "Введение"
+  }
+}
