@@ -1,11 +1,11 @@
 ---
 id: overview
 slug: /
-title: Общая информация
+title: Brover E5  
 sidebar_label: Общая информация
 sidebar_position: 1
 ---
-## Brover E5 — образовательный и исследовательский шестиколёсный ровер на базе ROS2 и модулях VBCore
+### Шестиколёсный ровер на базе ROS2 и модулях VBCore
 
 ![Ровер](/img/rover/Rover-E5-base.png)
 
