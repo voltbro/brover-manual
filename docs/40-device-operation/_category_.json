@@ -1,0 +1,9 @@
+{
+  "label": "Работа с устройством",
+  "position": 5,
+  "link": {
+    "slug": "device-operation",
+    "type": "generated-index",
+    "description": "Работа с устройством"
+  }
+}
