@@ -1,0 +1,9 @@
+{
+  "label": " Изменение стандартных настроек устройства",
+  "position": 3,
+  "link": {
+    "slug": "changing-default-settings",
+    "type": "generated-index",
+    "description": "Изменение стандартных настроек BRover-E5"
+  }
+}
