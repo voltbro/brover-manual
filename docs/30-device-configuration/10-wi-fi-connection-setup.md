@@ -61,7 +61,7 @@ network:
           password: password_new_wifi
 ```
 
-![](img/wifi.png)
+![Пример настройки Wi-Fi в Netplan](img/wifi.png)
 
 4. Сохраните файл:
 

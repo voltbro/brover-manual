@@ -57,27 +57,27 @@ description: "Перепрошивка microSD-карты и установка 
 2. Запустите программу
 3. Выберите устройство - **Raspberry Pi 5**
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-1.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-1.png").default} alt="Выбор Raspberry Pi 5 в Raspberry Pi Imager" width="500" /></figure>
 
 4. Пролистните вниз и выберите пункт **Использовать настраиваемый образ**
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-2.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-2.png").default} alt="Выбор пользовательского образа в Raspberry Pi Imager" width="500" /></figure>
 
 5. Укажите скачанный образ
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-3.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-3.png").default} alt="Выбор файла образа в Raspberry Pi Imager" width="500" /></figure>
 
 6. Выберите подключенную microSD-карту
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-4.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-4.png").default} alt="Выбор microSD-карты в Raspberry Pi Imager" width="500" /></figure>
 
 7. Нажмите **Запись**
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-5.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-5.png").default} alt="Запуск записи в Raspberry Pi Imager" width="500" /></figure>
 
 8. Согласитесь с полной очисткой содержимого на microSD-карте
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-6.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-6.png").default} alt="Подтверждение очистки microSD-карты" width="500" /></figure>
 
 Во время записи операционная система может показывать всплывающие окна с предложением отформатировать разделы. Закройте эти окна без форматирования, дождитесь завершения записи и извлеките карту.
 
@@ -93,17 +93,17 @@ description: "Перепрошивка microSD-карты и установка 
 2. Запустите программу
 3. Нажмите **Flash from file** и выберите скачанный образ
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-1.png").default} alt="qj" width="500" /></figure>
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-2.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-1.png").default} alt="Главное окно balenaEtcher" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-2.png").default} alt="Выбор образа в balenaEtcher" width="500" /></figure>
 
 4. Нажмите **Select target** и выберите microSD-карту
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-3.png").default} alt="qj" width="500" /></figure>
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-4.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-3.png").default} alt="Выбор носителя в balenaEtcher" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-4.png").default} alt="Список доступных носителей в balenaEtcher" width="500" /></figure>
 
 5. Нажмите **Flash**
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-5.png").default} alt="qj" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-5.png").default} alt="Запуск записи в balenaEtcher" width="500" /></figure>
 
 После завершения дождитесь окончания проверки записи и извлеките карту.
 

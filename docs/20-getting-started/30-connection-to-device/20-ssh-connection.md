@@ -44,15 +44,15 @@ ssh pi@broverXX.local
 
 - Заходим на страницу авторизации и вводим логин и пароль с доступом к веб-интерфейсу
 
-![](../img/keenetic-1.png)
+![Страница авторизации роутера Keenetic](../img/keenetic-1.png)
 
 - Переходим в раздел **Мои сети и Wi-Fi -> Список клиентов**
 
-![](../img/keenetic-2.png)
+![Раздел списка клиентов Keenetic](../img/keenetic-2.png)
 
 - Смотрим список устройств. Находим ровер и его IP-адрес
 
-![](../img/keenetic-3.png)
+![IP-адрес ровера в списке клиентов Keenetic](../img/keenetic-3.png)
 
 #### С помощью программы Angry IP Scanner
 
@@ -73,7 +73,7 @@ ssh pi@broverXX.local
 
   3. После выполнения bash-скрипта появится ярлык приложения **Angry IP Scanner**
 
-  ![](../img/angryipscanner-bash.png)
+  ![Ярлык Angry IP Scanner после установки](../img/angryipscanner-bash.png)
 
 </details>
 
@@ -86,11 +86,11 @@ ssh pi@broverXX.local
       
    2. Запустите скачанный файл и установите утилиту:
 
-![](../img/angryipscanner-install1.png)
+![Установка DEB-пакета Angry IP Scanner](../img/angryipscanner-install1.png)
 
    3. После установки ярлык утилиты должен появиться в списке приложений
 
-![](../img/angryipscanner-install2.png)
+![Ярлык Angry IP Scanner в списке приложений](../img/angryipscanner-install2.png)
 
 </details>
 
@@ -98,19 +98,19 @@ ssh pi@broverXX.local
 
    - Запустите **Angry IP Scanner**
 
-![](../img/angryipscanner-1.png)
+![Главное окно Angry IP Scanner](../img/angryipscanner-1.png)
 
    - Выберите необходимый диапазон сканируемых IP-адресов и запустите сканирование
 
-![](../img/angryipscanner-2.png)
+![Запуск сканирования в Angry IP Scanner](../img/angryipscanner-2.png)
 
    - После сканирования вы увидите статистику. Чтобы показывать только активные хосты, выберите в меню **Инструменты → Предпочтения ...→ Отобразить → Только активные хосты (отвечающие на пинг)**
 
-![](../img/angryipscanner-3.png)
+![Настройка отображения активных хостов](../img/angryipscanner-3.png)
 
    - Повторите сканирование. В случае, если компьютер и ровер подключены к одной Wi-Fi-сети, то вы должны увидеть его IP-адрес:
 
-![](../img/angryipscanner-4.png)
+![Найденный IP-адрес ровера в Angry IP Scanner](../img/angryipscanner-4.png)
 
 
 ---

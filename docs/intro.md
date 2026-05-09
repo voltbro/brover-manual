@@ -10,7 +10,7 @@ sidebar_position: 1
 **BRover-E5** — это модульный шестиколёсный образовательный робот-ровер, разработанный для изучения современной робототехники на практике.
 
 <figure style={{textAlign: 'center'}}>
-   <img src={require("/img/rover/Rover-E5-base.png").default} alt="qj" width="600" />
+   <img src={require("/img/rover/Rover-E5-base.png").default} alt="Ровер BRover-E5" width="600" />
    <figcaption>
     *Ровер BRover-E5*
   </figcaption>
