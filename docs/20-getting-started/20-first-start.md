@@ -9,7 +9,7 @@ description: "Подготовка и первое включение BRover-E5"
 
 # Первый запуск
 
-Перед началом работы с **BRover E5** необходимо выполнить несколько последовательных шагов: проверить устройство, подготовить его к включению и убедиться, что система корректно запускается.
+Перед началом работы с **BRover-E5** необходимо выполнить несколько последовательных шагов: проверить устройство, подготовить его к включению и убедиться, что система корректно запускается.
 
 ## Подготовка и включение
 
@@ -44,8 +44,8 @@ description: "Подготовка и первое включение BRover-E5"
 
 | Статус | Пользовательская кнопка | Кнопка питания |
 | ------ | -------------- | ----------------------- |
-| Ровер в процессе включения | <span style={{ backgroundColor: '#ffffff', color: 'Black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Не светится </span> | <span style={{ backgroundColor: '#e6d813', color: 'black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Желтый цвет </span> |
-| Ровер включен | <span style={{ backgroundColor: '#0040ff', color: 'white', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Синий цвет </span> | <span style={{ backgroundColor: '#2bff00', color: 'black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Зеленый цвет </span> |
+| Ровер в процессе включения | <span style={{ backgroundColor: '#ffffff', color: 'Black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Не светится </span> | <span style={{ backgroundColor: '#e6d813', color: 'black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Жёлтый цвет </span> |
+| Ровер включён | <span style={{ backgroundColor: '#0040ff', color: 'white', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Синий цвет </span> | <span style={{ backgroundColor: '#2bff00', color: 'black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Зелёный цвет </span> |
 :::
 
 ## Проверка работоспособности

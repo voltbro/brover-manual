@@ -4,7 +4,7 @@ slug: updating-os-image
 title: "Обновление образа ОС"
 sidebar_label: "Обновление образа ОС"
 sidebar_position: 4
-description: "Перепрошивка microSD-карты и установка нового образа системы на BRover E5"
+description: "Перепрошивка microSD-карты и установка нового образа системы на BRover-E5"
 ---
 
 # Обновление образа ОС
@@ -27,7 +27,7 @@ description: "Перепрошивка microSD-карты и установка 
 
 ## Где скачать образ
 
-Актуальные образы системы для **BRover E5** доступны по ссылке:
+Актуальные образы системы для **BRover-E5** доступны по ссылке:
 
 [https://disk.360.yandex.ru/d/XdNcAYlAGHu0yg](https://disk.360.yandex.ru/d/XdNcAYlAGHu0yg)
 
@@ -63,7 +63,7 @@ description: "Перепрошивка microSD-карты и установка 
 
 <figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-3.png").default} alt="qj" width="500" /></figure>
 
-6. Выберите подключунную microSD-карту
+6. Выберите подключенную microSD-карту
 
 <figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-4.png").default} alt="qj" width="500" /></figure>
 
@@ -71,11 +71,11 @@ description: "Перепрошивка microSD-карты и установка 
 
 <figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-5.png").default} alt="qj" width="500" /></figure>
 
-8. Согласитесь с полной очистой содержимого на microSD-карте
+8. Согласитесь с полной очисткой содержимого на microSD-карте
 
 <figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-6.png").default} alt="qj" width="500" /></figure>
 
-Во время записи игнорируйте все высплывающие окна связанные с форматированим разделов и т.д. Дождитесь завершения записи и извлеките карту.
+Во время записи игнорируйте все всплывающие окна связанные с форматированием разделов и т.д. Дождитесь завершения записи и извлеките карту.
 
 ---
 
