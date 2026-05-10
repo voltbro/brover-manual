@@ -52,3 +52,5 @@ npm run clear
 | `npm run build` | Сборка статического сайта в папку `build` |
 | `npm run clear` | Очистка сборочной директории |
 | `npm run serve` | Локальный просмотр собранного сайта |
+
+npm i @docusaurus/core@latest @docusaurus/faster@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest
