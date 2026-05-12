@@ -1,9 +1,9 @@
 ---
-id: 42-ros-nodes
+id: 10-ros-nodes
 slug: ros-nodes
 title: "ROS 2 ноды"
 sidebar_label: "ROS 2 ноды"
-sidebar_position: 2
+sidebar_position: 1
 description: "Описание запущенных на ровере ROS 2 узлов"
 ---
 

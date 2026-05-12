@@ -1,0 +1,10 @@
+{
+  "label": "ROS 2 интерфейсы",
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "slug": "ros-interfaces",
+    "type": "generated-index",
+    "description": "Ноды, топики и сервисы ROS 2 на ровере BRover-E5"
+  }
+}

@@ -1,9 +1,9 @@
 ---
-id: 43-ros-topics
+id: 20-ros-topics
 slug: ros-topics
 title: "ROS 2 топики"
 sidebar_label: "ROS 2 топики"
-sidebar_position: 3
+sidebar_position: 2
 description: "Описание используемых на ровере ROS 2 топиков"
 ---
 

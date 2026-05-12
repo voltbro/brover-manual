@@ -1,9 +1,9 @@
 ---
-id: 44-ros-services
+id: 30-ros-services
 slug: ros-services
 title: "ROS 2 сервисы"
 sidebar_label: "ROS 2 сервисы"
-sidebar_position: 4
+sidebar_position: 3
 description: "Описание используемых на ровере ROS 2 сервисов"
 ---
 

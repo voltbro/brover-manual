@@ -1,13 +1,13 @@
 ---
-id: 41-raspberry-pi-image
-slug: raspberry-pi-image
-title: "Образ Raspberry Pi"
-sidebar_label: "Образ Raspberry Pi"
-sidebar_position: 1
-description: "Описание используемого образа для Raspberry Pi 5"
+id: 40-software
+slug: software
+title: "Программное обеспечение"
+sidebar_label: "Программное обеспечение"
+sidebar_position: 4
+description: "Описание программного обеспечения BRover-E5"
 ---
 
-# Образ Raspberry Pi
+# Программное обеспечение
 
 Микрокомпьютер Raspberry Pi 5, установленный в роботах **BRover-E5**, поставляется с предустановленным образом операционной системы на базе **Ubuntu Server 24.04.3 LTS**.
 
