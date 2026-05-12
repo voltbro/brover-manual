@@ -21,9 +21,10 @@ ros2 service list
 
 ## Пользовательские сервисы
 
-На ровере реализованы два основных пользовательских сервиса:
+На ровере реализованы три основных пользовательских сервиса:
 
 ```bash
+/hmi/beep
 /hmi/led
 /odom/reset
 ```
@@ -68,6 +69,27 @@ ros2 service call /hmi/led cyphal_ros2_bridge/srv/CallHMILed "{'led': {'r':0, 'g
 * `0` — кнопка питания
 
 Таким образом можно программно управлять визуальной индикацией состояния системы.
+
+## Управление зуммером
+
+Сервис `/hmi/beep` используется для управления зуммером **HCM1205X**, подключённым к **PowerBoard**.
+
+Тип сервиса:
+
+```bash
+cyphal_ros2_bridge/srv/CallHMIBeeper
+```
+
+Пример вызова:
+
+```bash
+ros2 service call /hmi/beep cyphal_ros2_bridge/srv/CallHMIBeeper "{'beeper': {'duration':1, 'frequency':1}}"
+```
+
+В запросе задаются:
+
+* `duration` — длительность сигнала
+* `frequency` — частота сигнала
 
 ## Сброс одометрии
 
@@ -114,6 +136,24 @@ ros2 service info /odom/reset
 
 Это позволяет узнать тип сервиса, а также какие ноды являются его сервером и клиентами.
 
+Например, для сервиса зуммера:
+
+```bash
+ros2 service info /hmi/beep
+```
+
+Чтобы посмотреть структуру сообщения, используйте команду:
+
+```bash
+ros2 interface show <тип_сервиса>
+```
+
+где `<тип_сервиса>` — название типа, скопированное из вывода предыдущей команды. Например:
+
+```bash
+ros2 interface show cyphal_ros2_bridge/srv/CallHMIBeeper
+```
+
 ## Полный список сервисов
 
 Ниже приведён полный список сервисов, доступных в базовой конфигурации:
@@ -141,6 +181,7 @@ ros2 service info /odom/reset
 /cyphal_bridge/list_parameters
 /cyphal_bridge/set_parameters
 /cyphal_bridge/set_parameters_atomically
+/hmi/beep
 /hmi/led
 /imu/describe_parameters
 /imu/get_parameter_types
