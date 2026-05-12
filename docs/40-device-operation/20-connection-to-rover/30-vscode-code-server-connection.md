@@ -4,7 +4,7 @@ id: 20-vscode-code-server-connection
 slug: vscode-code-server-connection
 title: "Подключение через VS Code и code-server"
 sidebar_label: "VS Code / code-server"
-sidebar_position: 3
+sidebar_position: 4
 description: "Подключение к BRover-E5 через браузер (code-server) и VS Code Remote-SSH"
 ---
 
@@ -55,13 +55,13 @@ http://<IP-адрес>:8090
 2. В левом нижнем углу окна нажмите **Open a Remote Window** <br />
    _При первом использовании потребуется установка расширения **Remote - SSH**_
 
-![Открытие удалённого окна в VS Code](../img/VSCode-1.png)
+![Открытие удалённого окна в VS Code](img/VSCode-1.png)
 
 3. В появившемся меню выберите **Connect to Host → Add New SSH Host**
 
-![Меню подключения к удалённому хосту в VS Code](../img/VSCode-2.png)
+![Меню подключения к удалённому хосту в VS Code](img/VSCode-2.png)
 
-![Добавление нового SSH-хоста в VS Code](../img/VSCode-3.png)
+![Добавление нового SSH-хоста в VS Code](img/VSCode-3.png)
 
 4. В строке ввода введите команду:
 
@@ -71,7 +71,7 @@ ssh pi@<IP-адрес ровера>
 
 и нажмите *Enter*
 
-![Ввод SSH-команды в VS Code](../img/VSCode-4.png)
+![Ввод SSH-команды в VS Code](img/VSCode-4.png)
 
 5. Выберите SSH-config файл для сохранения хоста
 
@@ -79,7 +79,7 @@ ssh pi@<IP-адрес ровера>
 
 7. Если всё выполнено правильно, в правом нижнем углу появится окно:
 
-![Уведомление о добавленном SSH-хосте в VS Code](../img/VSCode-5.png)
+![Уведомление о добавленном SSH-хосте в VS Code](img/VSCode-5.png)
 
 8. Нажмите *Connect*, чтобы подключиться к роверу
 

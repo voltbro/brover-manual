@@ -4,7 +4,7 @@ slug: additional-devices
 title: "Подключение дополнительных устройств"
 draft: true
 sidebar_label: "Подключение дополнительных устройств"
-sidebar_position: 2
+sidebar_position: 4
 description: "Подключение дополнительных устройств к BRover-E5"
 ---
 

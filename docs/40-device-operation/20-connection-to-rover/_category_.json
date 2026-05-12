@@ -1,0 +1,10 @@
+{
+  "label": "Подключение к роверу",
+  "position": 2,
+  "collapsed": true,
+  "link": {
+    "slug": "connection-to-rover",
+    "type": "generated-index",
+    "description": "Способы подключения к роверу BRover-E5"
+  }
+}

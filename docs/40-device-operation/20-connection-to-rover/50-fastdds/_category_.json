@@ -1,0 +1,10 @@
+{
+  "label": "FastDDS",
+  "position": 5,
+  "collapsed": true,
+  "link": {
+    "slug": "fastdds",
+    "type": "generated-index",
+    "description": "Подключение к ROS 2 через Fast DDS"
+  }
+}
