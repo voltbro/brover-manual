@@ -27,12 +27,13 @@ ros2 topic list
 /camera1
 /camera1/image_raw
 /camera1/image_compressed
+/camera1/camera_info
 /camera1/compressedDepth
 /camera1/image_raw/theora
 /image_raw/zstd
 ```
 
-Они используются для передачи изображений в различных форматах. В большинстве случаев применяются топики `/camera1` и `/camera1/image_raw`, так как они содержат исходные данные изображения.
+Они используются для передачи изображений и параметров камеры. В большинстве случаев применяются топики `/camera1/image_raw`, `/camera1/image_compressed` и `/camera1/camera_info`.
 
 ## Управление моторами
 
