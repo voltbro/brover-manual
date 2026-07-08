@@ -1,10 +1,10 @@
 ---
-id: 30-joystick-control
+id: 70-joystick-control
 slug: joystick-control
 title: "Управление с джойстика"
 draft: true
 sidebar_label: "Управление с джойстика"
-sidebar_position: 5
+sidebar_position: 7
 description: "Управление с джойстика BRover-E5"
 ---
 

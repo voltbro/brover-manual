@@ -1,10 +1,10 @@
 ---
-id: 20-connecting-additional-devices
+id: 60-connecting-additional-devices
 slug: additional-devices
 title: "Подключение дополнительных устройств"
 draft: true
 sidebar_label: "Подключение дополнительных устройств"
-sidebar_position: 4
+sidebar_position: 6
 description: "Подключение дополнительных устройств к BRover-E5"
 ---
 

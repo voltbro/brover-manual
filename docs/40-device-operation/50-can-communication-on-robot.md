@@ -1,9 +1,9 @@
 ---
-id: 10-can-communication-on-robot
+id: 50-can-communication-on-robot
 slug: can-communication-on-robot
 title: "Работа с CAN на роботе"
 sidebar_label: "CAN на роботе"
-sidebar_position: 3
+sidebar_position: 5
 description: "Работа с CAN-шиной на BRover-E5"
 ---
 
