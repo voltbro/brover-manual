@@ -23,11 +23,11 @@ ros2 service list
 
 На ровере реализованы три основных пользовательских сервиса:
 
-```bash
-/hmi/beep
-/hmi/led
-/odom/reset
-```
+| Сервис | Тип | Назначение |
+| ------ | --- | ---------- |
+| `/hmi/beep` | `cyphal_ros2_bridge/srv/CallHMIBeeper` | управление зуммером |
+| `/hmi/led` | `cyphal_ros2_bridge/srv/CallHMILed` | управление подсветкой кнопок |
+| `/odom/reset` | `std_srvs/srv/Empty` | сброс текущей одометрии |
 
 ### Общий формат вызова
 
@@ -158,6 +158,9 @@ ros2 interface show cyphal_ros2_bridge/srv/CallHMIBeeper
 
 Ниже приведён полный список сервисов, доступных в базовой конфигурации:
 
+<details>
+<summary>Показать полный список ROS-сервисов</summary>
+
 ```bash
 /camera1/describe_parameters
 /camera1/get_parameter_types
@@ -228,3 +231,5 @@ ros2 interface show cyphal_ros2_bridge/srv/CallHMIBeeper
 /web_video_server/set_parameters
 /web_video_server/set_parameters_atomically
 ```
+
+</details>
