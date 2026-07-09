@@ -79,6 +79,19 @@ SSID: TurtleBro / TurtleBro5G  
 
 Password: turtlew001
 ```
+
+Если ровер не может подключиться к известной Wi-Fi-сети, он может перейти в режим Wi-Fi fallback и создать собственную точку доступа.
+
+Параметры fallback-точки:
+
+```bash
+SSID: имя хоста ровера, например brover01
+Password: turtlew001
+IP-адрес ровера: 192.168.50.1
+```
+
+Подробнее см. раздел [Сетевой fallback](../40-device-operation/40-network-fallback.md).
+
 Имя хоста в «чистом» образе установлено как:
 
 ```bash
@@ -147,9 +160,10 @@ UAVCAN__CAN__MTU=64
 * `fastdds.service` — запуск Fast DDS Discovery Server;
 * `canhat.service` — настройка CAN-интерфейсов;
 * `code-server@pi.service` — запуск VS Code Web для пользователя `pi`;
-* `network-fallback.service` — мониторинг Ethernet-подключения и fallback-сети.
+* `network-fallback.service` — мониторинг Ethernet-подключения и fallback-сети;
+* `wifi-ap-fallback.service` — мониторинг Wi-Fi и запуск fallback-точки доступа.
 
-Подробное описание сервисов, команд проверки и логов приведено в разделе [Системные сервисы](../40-device-operation/30-system-services.md).
+Подробное описание сервисов, команд проверки и логов приведено в разделе [Системные сервисы](../40-device-operation/30-system-services.md). Подробности сетевых fallback-режимов описаны в разделе [Сетевой fallback](../40-device-operation/40-network-fallback.md).
 
 ## Запись образа на SD-карту
 

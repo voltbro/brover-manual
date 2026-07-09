@@ -86,7 +86,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
+        /*links: [
           {
             title: 'Сообщества',
             items: [
@@ -121,7 +121,7 @@ const config = {
               },
             ],
           },
-        ],
+        ],*/
         copyright: `Copyright © ${new Date().getFullYear()} Проект "Братья Вольт" - Voltbro. Built with Docusaurus.`,
       },
       prism: {
