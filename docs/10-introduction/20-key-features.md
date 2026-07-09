@@ -23,6 +23,7 @@ description: "Описание основных возможностей ров�
 
 <figure style={{textAlign: 'center'}}>
   <img src={require("./img/webUI.png").default} alt="Веб-интерфейс управления BRover-E5" width="800" />
+  <figcaption>Веб-интерфейс управления BRover-E5 на экране компьютера.</figcaption>
 </figure>
 
 Через веб-интерфейс можно:
@@ -38,6 +39,7 @@ description: "Описание основных возможностей ров�
 
 <figure style={{textAlign: 'center'}}>
   <img src={require("./img/mobile-webUI.jpg").default} alt="Мобильная версия веб-интерфейса BRover-E5" width="360" />
+  <figcaption>Мобильная версия веб-интерфейса с виртуальным джойстиком.</figcaption>
 </figure>
 
 Подробная инструкция по подключению и описанию элементов интерфейса приведена в разделе [«Веб-интерфейс»](../40-device-operation/20-connection-to-rover/30-web-interface.md).
@@ -99,7 +101,10 @@ brover15.local:8090
 ```
 </details>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/code-server1.png").default} alt="Страница входа code-server" width="800" /></figure>
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/code-server1.png").default} alt="Страница входа code-server" width="800" />
+  <figcaption>Страница входа в code-server.</figcaption>
+</figure>
 
 3. При подключении потребуется ввести пароль:
 
@@ -107,7 +112,10 @@ brover15.local:8090
 Пароль по умолчанию: brobro
 ```
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/code-server2.png").default} alt="Интерфейс code-server" width="800" /></figure>
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/code-server2.png").default} alt="Интерфейс code-server" width="800" />
+  <figcaption>Интерфейс code-server после подключения к роверу.</figcaption>
+</figure>
 
 ## Расширение функциональности
 

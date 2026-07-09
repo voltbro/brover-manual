@@ -1,6 +1,6 @@
 ---
 
-id: 20-vscode-code-server-connection
+id: 40-vscode-code-server-connection
 slug: vscode-code-server-connection
 title: "Подключение через VS Code и code-server"
 sidebar_label: "VS Code / code-server"
@@ -14,8 +14,6 @@ description: "Подключение к BRover-E5 через браузер (cod
 
 * **code-server (через браузер)** — быстрый доступ без установки
 * **VS Code + Remote-SSH** — полноценная локальная IDE с удалённым доступом
-
----
 
 ## Подключение через code-server (браузер)
 
@@ -55,13 +53,22 @@ http://<IP-адрес>:8090
 2. В левом нижнем углу окна нажмите **Open a Remote Window** <br />
    _При первом использовании потребуется установка расширения **Remote - SSH**_
 
-![Открытие удалённого окна в VS Code](img/VSCode-1.png)
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/VSCode-1.png").default} alt="Открытие удалённого окна в VS Code" width="800" />
+  <figcaption>Открытие меню удалённого подключения в VS Code.</figcaption>
+</figure>
 
 3. В появившемся меню выберите **Connect to Host → Add New SSH Host**
 
-![Меню подключения к удалённому хосту в VS Code](img/VSCode-2.png)
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/VSCode-2.png").default} alt="Меню подключения к удалённому хосту в VS Code" width="800" />
+  <figcaption>Выбор подключения к удалённому хосту.</figcaption>
+</figure>
 
-![Добавление нового SSH-хоста в VS Code](img/VSCode-3.png)
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/VSCode-3.png").default} alt="Добавление нового SSH-хоста в VS Code" width="800" />
+  <figcaption>Добавление нового SSH-хоста.</figcaption>
+</figure>
 
 4. В строке ввода введите команду:
 
@@ -77,7 +84,10 @@ ssh pi@<IP-адрес ровера>
 
 и нажмите *Enter*
 
-![Ввод SSH-команды в VS Code](img/VSCode-4.png)
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/VSCode-4.png").default} alt="Ввод SSH-команды в VS Code" width="800" />
+  <figcaption>Ввод SSH-команды для подключения к роверу.</figcaption>
+</figure>
 
 5. Выберите SSH-config файл для сохранения хоста
 
@@ -85,7 +95,10 @@ ssh pi@<IP-адрес ровера>
 
 7. Если всё выполнено правильно, в правом нижнем углу появится окно:
 
-![Уведомление о добавленном SSH-хосте в VS Code](img/VSCode-5.png)
+<figure style={{textAlign: 'center'}}>
+  <img src={require("./img/VSCode-5.png").default} alt="Уведомление о добавленном SSH-хосте в VS Code" width="800" />
+  <figcaption>Уведомление об успешном добавлении SSH-хоста.</figcaption>
+</figure>
 
 8. Нажмите *Connect*, чтобы подключиться к роверу
 
@@ -99,7 +112,6 @@ ssh pi@<IP-адрес ровера>
 Open a Remote Window → Connect to Host → IP-адрес ровера
 ```
 
-:::note
+:::note[Fallback-сеть]
 Если используется fallback-сеть, используйте IP-адрес соответствующего сетевого режима. Подробнее см. раздел [Сетевой fallback](../40-network-fallback.md).
 :::
----

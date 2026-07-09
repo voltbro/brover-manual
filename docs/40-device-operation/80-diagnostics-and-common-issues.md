@@ -328,7 +328,7 @@ curl -I http://127.0.0.1:8090
 sudo systemctl restart code-server@pi.service
 ```
 
-Подробнее см. раздел [VS Code / code-server](20-connection-to-rover/30-vscode-code-server-connection.md).
+Подробнее см. раздел [VS Code / code-server](20-connection-to-rover/40-vscode-code-server-connection.md).
 
 ## Компьютер не видит ROS 2-топики ровера
 

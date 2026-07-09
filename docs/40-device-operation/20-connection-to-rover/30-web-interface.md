@@ -97,6 +97,7 @@ Password: turtlew001
 
 <figure style={{textAlign: 'center'}}>
   <img src={require("../../10-introduction/img/webUI.png").default} alt="Веб-интерфейс BRover-E5 на экране компьютера" width="800" />
+  <figcaption>Веб-интерфейс BRover-E5 на экране компьютера.</figcaption>
 </figure>
 
 В правой панели отображаются:
@@ -113,4 +114,5 @@ Password: turtlew001
 
 <figure style={{textAlign: 'center'}}>
   <img src={require("../../10-introduction/img/mobile-webUI.jpg").default} alt="Мобильная версия веб-интерфейса BRover-E5" width="360" />
+  <figcaption>Мобильная версия веб-интерфейса с виртуальным джойстиком.</figcaption>
 </figure>
