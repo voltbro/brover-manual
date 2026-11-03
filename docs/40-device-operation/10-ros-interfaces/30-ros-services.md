@@ -156,12 +156,19 @@ ros2 interface show cyphal_ros2_bridge/srv/CallHMIBeeper
 
 ## Полный список сервисов
 
-Ниже приведён полный список сервисов, доступных в базовой конфигурации:
+Ниже приведён список сервисов. Его состав зависит от запущенных нод и подключённых камер.
 
 <details>
 <summary>Показать полный список ROS-сервисов</summary>
 
 ```bash
+/bat_monitor/describe_parameters
+/bat_monitor/get_parameter_types
+/bat_monitor/get_parameters
+/bat_monitor/get_type_description
+/bat_monitor/list_parameters
+/bat_monitor/set_parameters
+/bat_monitor/set_parameters_atomically
 /camera1/describe_parameters
 /camera1/get_parameter_types
 /camera1/get_parameters
@@ -223,6 +230,13 @@ ros2 interface show cyphal_ros2_bridge/srv/CallHMIBeeper
 /rosbridge_server/set_parameters
 /rosbridge_server/set_parameters_atomically
 /set_capture
+/web_server/describe_parameters
+/web_server/get_parameter_types
+/web_server/get_parameters
+/web_server/get_type_description
+/web_server/list_parameters
+/web_server/set_parameters
+/web_server/set_parameters_atomically
 /web_video_server/describe_parameters
 /web_video_server/get_parameter_types
 /web_video_server/get_parameters
