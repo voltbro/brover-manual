@@ -126,10 +126,10 @@ broverXX
 
 Обмен данными с драйверами двигателей осуществляется по протоколу **Cyphal (поверх CAN FD)**.
 
-Параметры CAN-шины хранятся в файле:
+Интерфейсы CAN автоматически настраиваются при обнаружении устройств через правило udev:
 
 ```bash
-/opt/voltbro/config.ini
+/etc/udev/rules.d/80-can.rules
 ```
 
 Параметры Cyphal находятся в:
@@ -158,7 +158,6 @@ UAVCAN__CAN__MTU=64
 * `ros_nodes.service` — запуск основных ROS 2-нод ровера;
 * `camera.service` — запуск USB-камеры через пакет `usb_cam`;
 * `fastdds.service` — запуск Fast DDS Discovery Server;
-* `canhat.service` — настройка CAN-интерфейсов;
 * `code-server@pi.service` — запуск VS Code Web для пользователя `pi`;
 * `network-fallback.service` — мониторинг Ethernet-подключения и fallback-сети;
 * `wifi-ap-fallback.service` — мониторинг Wi-Fi и запуск fallback-точки доступа.

@@ -51,7 +51,6 @@ systemctl --failed
 systemctl status ros_nodes.service --no-pager
 systemctl status camera.service --no-pager
 systemctl status fastdds.service --no-pager
-systemctl status canhat.service --no-pager
 systemctl status code-server@pi.service --no-pager
 ```
 
@@ -499,14 +498,6 @@ ss -tuln | grep ':9090'
 <summary>Показать диагностику CAN</summary>
 
 Для пользовательских задач используйте `can1`. Интерфейс `can0` используется системными компонентами ровера.
-
-Проверьте сервис настройки CAN:
-
-```bash
-systemctl status canhat.service --no-pager
-```
-
-`canhat.service` — разовый сервис настройки. После успешного выполнения нормальным состоянием может быть `active (exited)`.
 
 Проверьте пользовательский CAN-интерфейс:
 
