@@ -55,6 +55,7 @@ description: "Подготовка и первое включение BRover-E5"
 | ------ | -------------- | ----------------------- |
 | Ровер в процессе включения | <span style={{ backgroundColor: '#ffffff', color: 'Black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Не светится </span> | <span style={{ backgroundColor: '#e6d813', color: 'black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Жёлтый цвет </span> |
 | Ровер включён | <span style={{ backgroundColor: '#0040ff', color: 'white', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Синий цвет </span> | <span style={{ backgroundColor: '#2bff00', color: 'black', padding: '2px 20px', borderRadius: '12px', fontWeight: 'semi-bold' }}> Зелёный цвет </span> |
+| Напряжение аккумулятора 13,8 В или ниже | — | <span style={{ backgroundColor: '#c62828', color: '#ffffff', padding: '2px 20px', borderRadius: '12px', fontWeight: 600 }}>Мигает красным</span> |
 :::
 
 ## Проверка работоспособности
