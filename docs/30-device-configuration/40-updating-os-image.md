@@ -7,114 +7,119 @@ sidebar_position: 4
 description: "Перепрошивка microSD-карты и установка нового образа системы на BRover-E5"
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Обновление образа ОС
 
-Обновление образа операционной системы — это процесс полной перезаписи microSD-карты новым образом.
+Запись нового образа позволяет обновить программное обеспечение ровера или восстановить исходное состояние системы.
 
-:::warning[Внимание]
-Запись образа полностью удалит все данные с выбранной microSD-карты. Перед началом убедитесь, что выбрана именно карта ровера, а важные данные с неё больше не нужны.
+:::info[Когда необходимо обновлять образ]
+
+Обновление образа рекомендуется, если:
+
+* система не загружается или работает нестабильно;
+* повреждены системные файлы;
+* требуется обновление ROS 2 или системного окружения;
+* необходимо вернуть устройство к исходному состоянию;
+* возникают ошибки, которые не устраняются настройкой.
+
 :::
 
----
+:::warning[Данные на карте будут удалены]
 
-## Когда необходимо обновлять образ
+Запись образа полностью удалит все данные с выбранной microSD-карты. Убедитесь, что выбрана именно карта ровера, а важные данные с неё больше не нужны.
 
-Рекомендуется перепрошивать microSD-карту в следующих случаях:
+:::
 
-* система не загружается или работает нестабильно
-* повреждены системные файлы
-* требуется обновление ROS 2 или системного окружения
-* необходимо вернуть устройство к «чистому» состоянию
-* возникают ошибки, которые не устраняются через настройку
+## 1. Скачайте образ
 
----
+Скачайте последнюю версию образа для **BRover-E5** на свой компьютер:
 
-## Где скачать образ
+[Скачать образ broverOS](https://disk.360.yandex.ru/d/XdNcAYlAGHu0yg)
 
-Актуальные образы системы для **BRover-E5** доступны по ссылке:
+## 2. Подготовьте microSD
 
-[https://disk.360.yandex.ru/d/XdNcAYlAGHu0yg](https://disk.360.yandex.ru/d/XdNcAYlAGHu0yg)
+1. Выключите ровер и дождитесь завершения работы системы.
+2. Извлеките microSD-карту.
+3. Подключите карту к компьютеру через кардридер и убедитесь, что она определяется системой.
 
-Скачайте последнюю версию образа на свой компьютер.
+## 3. Запишите образ
 
----
+Для записи можно использовать одну из двух программ:
 
-## Подготовка microSD-карты
+* **Raspberry Pi Imager** — официальный инструмент Raspberry Pi для выбора устройства и записи образа ОС на microSD-карту.
+* **balenaEtcher** — универсальная программа для записи образов на карты памяти и USB-накопители с проверкой результата.
 
-1. Извлеките microSD-карту из ровера
-2. Подключите её к компьютеру через кардридер
-3. Убедитесь, что карта определяется системой
+Выберите программу, чтобы открыть соответствующую инструкцию:
 
----
+<Tabs>
+<TabItem value="imager" label="Raspberry Pi Imager" default>
 
-## Запись образа через Raspberry Pi Imager
+1. Установите [Raspberry Pi Imager](https://www.raspberrypi.com/software/) и запустите программу.
+2. Выберите устройство **Raspberry Pi 5**.
 
-**Raspberry Pi Imager** — официальный инструмент для работы с Raspberry Pi.
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-1.png").default} alt="Выбор Raspberry Pi 5 в Raspberry Pi Imager" width="750" /></figure>
 
-### Порядок действий
+3. В списке операционных систем выберите **Использовать настраиваемый образ**.
 
-1. Скачайте и установите [`Raspberry Pi Imager`](https://www.raspberrypi.com/software/)
-2. Запустите программу
-3. Выберите устройство - **Raspberry Pi 5**
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-2.png").default} alt="Выбор пользовательского образа в Raspberry Pi Imager" width="750" /></figure>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-1.png").default} alt="Выбор Raspberry Pi 5 в Raspberry Pi Imager" width="500" /></figure>
+4. Укажите скачанный образ.
 
-4. Пролистните вниз и выберите пункт **Использовать настраиваемый образ**
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-3.png").default} alt="Выбор файла образа в Raspberry Pi Imager" width="750" /></figure>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-2.png").default} alt="Выбор пользовательского образа в Raspberry Pi Imager" width="500" /></figure>
+5. Выберите microSD-карту ровера.
 
-5. Укажите скачанный образ
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-4.png").default} alt="Выбор microSD-карты в Raspberry Pi Imager" width="750" /></figure>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-3.png").default} alt="Выбор файла образа в Raspberry Pi Imager" width="500" /></figure>
+:::warning[Не применяйте дополнительные настройки]
 
-6. Выберите подключенную microSD-карту
+Готовый образ `broverOS` содержит необходимые настройки. Не применяйте дополнительные настройки Raspberry Pi Imager: имя устройства, пользователя, пароль, Wi-Fi и SSH.
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-4.png").default} alt="Выбор microSD-карты в Raspberry Pi Imager" width="500" /></figure>
+:::
 
-7. Нажмите **Запись**
+6. Нажмите **Запись**.
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-5.png").default} alt="Запуск записи в Raspberry Pi Imager" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-5.png").default} alt="Запуск записи в Raspberry Pi Imager" width="750" /></figure>
 
-8. Согласитесь с полной очисткой содержимого на microSD-карте
+7. Подтвердите удаление данных на выбранной карте.
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-6.png").default} alt="Подтверждение очистки microSD-карты" width="500" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/rpimager-6.png").default} alt="Подтверждение очистки microSD-карты" width="750" /></figure>
 
-Во время записи операционная система может показывать всплывающие окна с предложением отформатировать разделы. Закройте эти окна без форматирования, дождитесь завершения записи и извлеките карту.
+8. Дождитесь завершения записи и проверки.
 
----
+</TabItem>
+<TabItem value="etcher" label="balenaEtcher">
 
-## Запись образа через balenaEtcher
+1. Установите [balenaEtcher](https://github.com/balena-io/etcher/releases) и запустите программу.
+2. Нажмите **Flash from file** и выберите скачанный образ.
 
-**balenaEtcher** — простой и универсальный инструмент для записи образов.
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-1.png").default} alt="Главное окно balenaEtcher" width="750" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-2.png").default} alt="Выбор образа в balenaEtcher" width="750" /></figure>
 
-### Порядок действий
+3. Нажмите **Select target** и выберите microSD-карту ровера.
 
-1. Скачайте и установите [`balenaEtcher`](https://github.com/balena-io/etcher/releases)
-2. Запустите программу
-3. Нажмите **Flash from file** и выберите скачанный образ
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-3.png").default} alt="Выбор носителя в balenaEtcher" width="750" /></figure>
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-4.png").default} alt="Список доступных носителей в balenaEtcher" width="750" /></figure>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-1.png").default} alt="Главное окно balenaEtcher" width="500" /></figure>
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-2.png").default} alt="Выбор образа в balenaEtcher" width="500" /></figure>
+4. Нажмите **Flash**.
 
-4. Нажмите **Select target** и выберите microSD-карту
+<figure style={{textAlign: 'center'}}><img src={require("./img/balena-5.png").default} alt="Запуск записи в balenaEtcher" width="750" /></figure>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-3.png").default} alt="Выбор носителя в balenaEtcher" width="500" /></figure>
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-4.png").default} alt="Список доступных носителей в balenaEtcher" width="500" /></figure>
+5. Дождитесь завершения записи и проверки.
 
-5. Нажмите **Flash**
+</TabItem>
+</Tabs>
 
-<figure style={{textAlign: 'center'}}><img src={require("./img/balena-5.png").default} alt="Запуск записи в balenaEtcher" width="500" /></figure>
+:::warning[Предложение отформатировать карту]
 
-После завершения дождитесь окончания проверки записи и извлеките карту.
+Если Windows предлагает отформатировать разделы microSD-карты, закройте эти окна без форматирования.
 
----
+:::
 
-## Завершение
+## 4. Запустите ровер
 
-1. Вставьте microSD-карту обратно в ровер
-2. Включите устройство
-3. Дождитесь полной загрузки системы
-
-После загрузки ровер будет работать с новым образом системы.
-
----
+1. Безопасно извлеките microSD-карту из компьютера и вставьте её в ровер.
+2. Включите ровер и дождитесь загрузки.
+3. Подключитесь к устройству по инструкции [Первое подключение](../20-getting-started/30-first-connection.md).
