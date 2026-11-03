@@ -287,6 +287,8 @@ sudo systemctl restart ros_nodes.service
 
 Видеопоток в веб-интерфейсе формируется из ROS-топиков камеры. За камеру отвечает `camera.service`, а за HTTP-поток — `/web_video_server`.
 
+### USB-камера
+
 Проверьте сервис камеры:
 
 ```bash
@@ -301,6 +303,8 @@ ls -l /dev/v4l/by-id
 ls -l /dev/v4l/by-path
 ```
 
+### ROS-топик
+
 Проверьте ROS-топик камеры:
 
 ```bash
@@ -308,12 +312,44 @@ ros2 topic list | grep camera
 ros2 topic info /camera1/image_raw
 ```
 
+Для второй камеры используйте `/camera2/image_raw`.
+
+### HTTP-видеопоток
+
 Проверьте web_video_server:
 
 ```bash
 curl -I http://127.0.0.1:9999
 ss -tuln | grep ':9999'
 ```
+
+Для проверки отдельного кадра откройте в браузере на компьютере:
+
+```text
+http://<IP-адрес ровера>:9999/snapshot?topic=/camera1/image_raw
+```
+
+Ожидаемый результат — изображение с камеры. Для второй камеры замените `/camera1/image_raw` на `/camera2/image_raw`.
+
+В SSH-сеансе можно проверить HTTP-ответ без сохранения изображения:
+
+```bash
+curl --max-time 10 -sS -o /dev/null -w '%{http_code}\n' 'http://127.0.0.1:9999/snapshot?topic=/camera1/image_raw'
+```
+
+При успешном получении кадра ожидается код `200`.
+
+### Проверка автоматического восстановления
+
+```bash
+systemctl status camera-web-watchdog.timer --no-pager
+systemctl status camera-web-watchdog.service --no-pager
+journalctl -u camera-web-watchdog.service -n 30 --no-pager
+```
+
+Для таймера ожидается состояние `active (waiting)`. Сервис выполняет разовую проверку и после успешного завершения может находиться в состоянии `inactive (dead)`. Состояние `failed` означает ошибку проверки; её причину смотрите в журнале.
+
+### Логи и восстановление
 
 Проверьте логи камеры:
 
